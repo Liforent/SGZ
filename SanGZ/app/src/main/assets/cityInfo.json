@@ -1,0 +1,100 @@
+{
+  "cities": [
+    {
+      "id": "001",
+      "name": "会稽",
+      "population": 220022,
+      "ownerName": "张十三",
+      "zhujiang": "无",
+      "defence": 99,
+      "soldier": 3300,
+      "cityHeroes": ["张不二","郭嘉"],
+      "fieldHeroes":["贾诩","周瑜"],
+      "special": ""
+    },
+    {
+      "id": "002",
+      "name": "许昌",
+      "population": 210012,
+      "ownerName": "无",
+      "zhujiang": "无",
+      "defence": 99,
+      "soldier": 3300,
+      "cityHeroes": [],
+      "fieldHeroes": [],
+      "special": ""
+    },
+    {
+      "id": "003",
+      "name": "小沛",
+      "population": 153022,
+      "ownerName": "无",
+      "zhujiang": "无",
+      "defence": 98,
+      "soldier": 3100,
+      "cityHeroes": [],
+      "fieldHeroes": [],
+      "special": ""
+    },
+    {
+      "id": "004",
+      "name": "新野",
+      "population": 220022,
+      "ownerName": "无",
+      "zhujiang": "无",
+      "defence": 99,
+      "soldier": 3400,
+      "cityHeroes": [],
+      "fieldHeroes": [],
+      "special": ""
+    },
+    {
+      "id": "005",
+      "name": "柴桑",
+      "population": 320022,
+      "ownerName": "无",
+      "zhujiang": "无",
+      "defence": 99,
+      "soldier": 3300,
+      "cityHeroes": [],
+      "fieldHeroes": [],
+      "special": ""
+    },
+    {
+      "id": "006",
+      "name": "天水",
+      "population": 126022,
+      "ownerName": "无",
+      "zhujiang": "无",
+      "defence": 99,
+      "soldier": 3300,
+      "cityHeroes": [],
+      "fieldHeroes": [],
+      "special": ""
+    },
+    {
+      "id": "007",
+      "name": "洛阳",
+      "population": 229232,
+      "ownerName": "无",
+      "zhujiang": "无",
+      "defence": 99,
+      "soldier": 3300,
+      "cityHeroes": [],
+      "fieldHeroes": [],
+      "special": ""
+    },
+    {
+      "id": "008",
+      "name": "寿春",
+      "population": 10022,
+      "ownerName": "无",
+      "zhujiang": "无",
+      "defence": 99,
+      "soldier": 3300,
+      "cityHeroes": [],
+      "fieldHeroes": [],
+      "special": ""
+    }
+  ]
+}

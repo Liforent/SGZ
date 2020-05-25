@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide0"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="周瑜"
+        android:textSize="33sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="统帅："
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="88"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv0"
+        app:layout_constraintLeft_toRightOf="@id/tv0"
+        app:layout_constraintTop_toTopOf="@id/tv0" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="武器："
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        app:layout_constraintBottom_toBottomOf="@id/tv0"
+        app:layout_constraintLeft_toRightOf="@id/guide0"
+        app:layout_constraintTop_toTopOf="@id/tv0" />
+    <TextView
+        android:id="@+id/tv_weapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="青龙偃月刀"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv6"
+        app:layout_constraintLeft_toRightOf="@id/tv6"
+        app:layout_constraintTop_toTopOf="@id/tv6" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="武力："
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv0" />
+
+    <TextView
+        android:id="@+id/tv_force"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="88"
+        android:textColor="@color/black33"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv1"
+        app:layout_constraintLeft_toRightOf="@id/tv1"
+        app:layout_constraintTop_toTopOf="@id/tv1" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="防具："
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        app:layout_constraintBottom_toBottomOf="@id/tv1"
+        app:layout_constraintLeft_toRightOf="@id/guide0"
+        app:layout_constraintTop_toTopOf="@id/tv1" />
+    <TextView
+        android:id="@+id/tv_armor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金丝软甲"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv7"
+        app:layout_constraintLeft_toRightOf="@id/tv7"
+        app:layout_constraintTop_toTopOf="@id/tv7" />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="智谋："
+        android:textColor="@color/black33"
+
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+    <TextView
+        android:id="@+id/tv_intelligence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="88"
+        android:textColor="@color/black33"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv2"
+        app:layout_constraintLeft_toRightOf="@id/tv2"
+        app:layout_constraintTop_toTopOf="@id/tv2" />
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="坐骑："
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        app:layout_constraintBottom_toBottomOf="@id/tv2"
+        app:layout_constraintLeft_toRightOf="@id/guide0"
+        app:layout_constraintTop_toTopOf="@id/tv2" />
+    <TextView
+        android:id="@+id/tv_mount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赤兔马"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv8"
+        app:layout_constraintLeft_toRightOf="@id/tv8"
+        app:layout_constraintTop_toTopOf="@id/tv8" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="技能："
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+    <TextView
+        android:id="@+id/tv_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="火烧赤壁"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv3"
+        app:layout_constraintLeft_toRightOf="@id/tv3"
+        app:layout_constraintTop_toTopOf="@id/tv3" />
+
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所属："
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        app:layout_constraintBottom_toBottomOf="@id/tv3"
+        app:layout_constraintLeft_toRightOf="@id/guide0"
+        app:layout_constraintTop_toTopOf="@id/tv3" />
+    <TextView
+        android:id="@+id/tv_master"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在野"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv9"
+        app:layout_constraintLeft_toRightOf="@id/tv9"
+        app:layout_constraintTop_toTopOf="@id/tv9" />
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="好感："
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+    <TextView
+        android:id="@+id/tv_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="99"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv4"
+        app:layout_constraintLeft_toRightOf="@id/tv4"
+        app:layout_constraintTop_toTopOf="@id/tv4" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所在："
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        app:layout_constraintBottom_toBottomOf="@id/tv4"
+        app:layout_constraintLeft_toRightOf="@id/guide0"
+        app:layout_constraintTop_toTopOf="@id/tv4" />
+    <TextView
+        android:id="@+id/tv_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会稽"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv10"
+        app:layout_constraintLeft_toRightOf="@id/tv10"
+        app:layout_constraintTop_toTopOf="@id/tv10" />
+
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="喜好："
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv4" />
+
+    <TextView
+        android:id="@+id/tv_habbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="书籍"
+        android:textColor="@color/black33"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv5"
+        app:layout_constraintLeft_toRightOf="@id/tv5"
+        app:layout_constraintTop_toTopOf="@id/tv5" />
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="官职："
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        app:layout_constraintBottom_toBottomOf="@id/tv5"
+        app:layout_constraintLeft_toRightOf="@id/guide0"
+        app:layout_constraintTop_toTopOf="@id/tv5" />
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大都督"
+        android:textColor="@color/black33"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv11"
+        app:layout_constraintLeft_toRightOf="@id/tv11"
+        app:layout_constraintTop_toTopOf="@id/tv11" />
+    <TextView
+        android:id="@+id/tv_chat"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="谈天论地"
+        android:gravity="center"
+        android:background="@drawable/sg_bg_r16_red"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_position"  />
+
+    <TextView
+        android:id="@+id/tv_fight"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="以武论友"
+        android:background="@drawable/sg_bg_r16_red"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/tv_chat"
+        app:layout_constraintBottom_toBottomOf="@id/tv_chat"
+        app:layout_constraintLeft_toRightOf="@id/tv_chat"
+        />
+    <TextView
+        android:id="@+id/tv_drink"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="把酒言欢"
+        android:background="@drawable/sg_bg_r16_red"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/tv_fight"
+        app:layout_constraintBottom_toBottomOf="@id/tv_fight"
+        app:layout_constraintLeft_toRightOf="@id/tv_fight"
+        />
+    <TextView
+        android:id="@+id/tv_recruit"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="招募"
+        android:background="@drawable/sg_bg_r16_red"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/tv_drink"
+        app:layout_constraintBottom_toBottomOf="@id/tv_drink"
+        app:layout_constraintLeft_toRightOf="@id/tv_drink"
+        />
+
+    <TextView
+        android:id="@+id/tv_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="信息"
+        android:textSize="33sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_chat" />
+    <TextView
+        android:id="@+id/tv_realtiame_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周瑜与你一见如故，决定与你共创大业！"
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_20"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/tv_21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="列传"
+        android:textSize="33sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_realtiame_message" />
+    <TextView
+        android:id="@+id/tv_biographies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="羽扇纶巾，谈笑间樯橹灰飞烟灭"
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_21"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

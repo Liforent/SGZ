@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black33">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_info"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cl_message"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide0"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="张十三"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="统帅："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv0"
+            app:layout_constraintLeft_toRightOf="@id/tv0"
+            app:layout_constraintTop_toTopOf="@id/tv0" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="武器："
+            android:textSize="10sp"
+            android:textColor="@color/black33"
+            app:layout_constraintBottom_toBottomOf="@id/tv0"
+            app:layout_constraintLeft_toRightOf="@id/guide0"
+            app:layout_constraintTop_toTopOf="@id/tv0" />
+        <TextView
+            android:id="@+id/tv_weapon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青龙偃月刀"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv6"
+            app:layout_constraintLeft_toRightOf="@id/tv6"
+            app:layout_constraintTop_toTopOf="@id/tv6" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="武力："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv0" />
+
+        <TextView
+            android:id="@+id/tv_force"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88"
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv1"
+            app:layout_constraintLeft_toRightOf="@id/tv1"
+            app:layout_constraintTop_toTopOf="@id/tv1" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="防具："
+            android:textSize="10sp"
+            android:textColor="@color/black33"
+            app:layout_constraintBottom_toBottomOf="@id/tv1"
+            app:layout_constraintLeft_toRightOf="@id/guide0"
+            app:layout_constraintTop_toTopOf="@id/tv1" />
+        <TextView
+            android:id="@+id/tv_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金丝软甲"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv7"
+            app:layout_constraintLeft_toRightOf="@id/tv7"
+            app:layout_constraintTop_toTopOf="@id/tv7" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="智谋："
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+        <TextView
+            android:id="@+id/tv_intelligence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88"
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv2"
+            app:layout_constraintLeft_toRightOf="@id/tv2"
+            app:layout_constraintTop_toTopOf="@id/tv2" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="坐骑："
+            android:textSize="10sp"
+            android:textColor="@color/black33"
+            app:layout_constraintBottom_toBottomOf="@id/tv2"
+            app:layout_constraintLeft_toRightOf="@id/guide0"
+            app:layout_constraintTop_toTopOf="@id/tv2" />
+        <TextView
+            android:id="@+id/tv_mount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赤兔马"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv8"
+            app:layout_constraintLeft_toRightOf="@id/tv8"
+            app:layout_constraintTop_toTopOf="@id/tv8" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="体力："
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+        <TextView
+            android:id="@+id/tv_hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88"
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv3"
+            app:layout_constraintLeft_toRightOf="@id/tv3"
+            app:layout_constraintTop_toTopOf="@id/tv3" />
+
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主帅："
+            android:textSize="10sp"
+            android:textColor="@color/black33"
+            app:layout_constraintBottom_toBottomOf="@id/tv3"
+            app:layout_constraintLeft_toRightOf="@id/guide0"
+            app:layout_constraintTop_toTopOf="@id/tv3" />
+        <TextView
+            android:id="@+id/tv_zhushuai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姜子牙"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv9"
+            app:layout_constraintLeft_toRightOf="@id/tv9"
+            app:layout_constraintTop_toTopOf="@id/tv9" />
+
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="金钱："
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2010"
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv4"
+            app:layout_constraintLeft_toRightOf="@id/tv4"
+            app:layout_constraintTop_toTopOf="@id/tv4" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="军师："
+            android:textSize="10sp"
+            android:textColor="@color/black33"
+            app:layout_constraintBottom_toBottomOf="@id/tv4"
+            app:layout_constraintLeft_toRightOf="@id/guide0"
+            app:layout_constraintTop_toTopOf="@id/tv4" />
+        <TextView
+            android:id="@+id/tv_junshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张良"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv10"
+            app:layout_constraintLeft_toRightOf="@id/tv10"
+            app:layout_constraintTop_toTopOf="@id/tv10" />
+
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="兵力："
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv4" />
+
+        <TextView
+            android:id="@+id/tv_soldier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13332"
+            android:textColor="@color/black33"
+
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv5"
+            app:layout_constraintLeft_toRightOf="@id/tv5"
+            app:layout_constraintTop_toTopOf="@id/tv5" />
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="先锋："
+            android:textSize="10sp"
+            android:textColor="@color/black33"
+            app:layout_constraintBottom_toBottomOf="@id/tv5"
+            app:layout_constraintLeft_toRightOf="@id/guide0"
+            app:layout_constraintTop_toTopOf="@id/tv5" />
+        <TextView
+            android:id="@+id/tv_xianfeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张飞"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv11"
+            app:layout_constraintLeft_toRightOf="@id/tv11"
+            app:layout_constraintTop_toTopOf="@id/tv11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_message"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@id/cl_info"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="会稽"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="人口："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_city" />
+
+        <TextView
+            android:id="@+id/tv_population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="230099"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv20"
+            app:layout_constraintLeft_toRightOf="@id/tv20"
+            app:layout_constraintTop_toTopOf="@id/tv20" />
+
+        <TextView
+            android:id="@+id/tv21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="君主："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv20" />
+
+        <TextView
+            android:id="@+id/tv_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="孙权"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv21"
+            app:layout_constraintLeft_toRightOf="@id/tv21"
+            app:layout_constraintTop_toTopOf="@id/tv21" />
+        <TextView
+            android:id="@+id/tv22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="主帅："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv21" />
+
+        <TextView
+            android:id="@+id/tv_city_zhushuai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="太史慈"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv22"
+            app:layout_constraintLeft_toRightOf="@id/tv22"
+            app:layout_constraintTop_toTopOf="@id/tv22" />
+        <TextView
+            android:id="@+id/tv23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="士兵："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv22" />
+
+        <TextView
+            android:id="@+id/tv_city_soldier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3000"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv23"
+            app:layout_constraintLeft_toRightOf="@id/tv23"
+            app:layout_constraintTop_toTopOf="@id/tv23" />
+
+        <TextView
+            android:id="@+id/tv24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="城防："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv23" />
+
+        <TextView
+            android:id="@+id/tv_city_defence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="98"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv24"
+            app:layout_constraintLeft_toRightOf="@id/tv24"
+            app:layout_constraintTop_toTopOf="@id/tv24" />
+
+        <TextView
+            android:id="@+id/tv25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="武将："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv24" />
+
+        <TextView
+            android:id="@+id/tv_city_hero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv25"
+            app:layout_constraintLeft_toRightOf="@id/tv25"
+            app:layout_constraintTop_toTopOf="@id/tv25" />
+        <TextView
+            android:id="@+id/tv26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="在野："
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv25" />
+
+        <TextView
+            android:id="@+id/tv_unemployed_hero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/black33"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv26"
+            app:layout_constraintLeft_toRightOf="@id/tv26"
+            app:layout_constraintTop_toTopOf="@id/tv26" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_map"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_info"
+        android:layout_margin="10dp"
+        android:background="@color/black99">
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="探索"/>
+        <TextView
+            android:id="@+id/tv_consume"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_search"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="消耗"/>
+        <TextView
+            android:id="@+id/tv_attack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_consume"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="攻打"/>
+        <TextView
+            android:id="@+id/tv_strategy"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_attack"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="计谋"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_event"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black99"
+        app:layout_constraintTop_toBottomOf="@id/cl_map"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tv_event_title"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="你发现了"/>
+        <TextView
+            android:id="@+id/tv_event_target"
+            android:textColor="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_event_title"
+            android:text="郭嘉"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

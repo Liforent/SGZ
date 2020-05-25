@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/black33</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 隐藏标题栏 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 处理程序启动时短暂的白屏（该属性可以让程序在初始化的时候窗口透明，初始化结束后主界面才会显示出来，从而也就完全看不出来白屏了。）-->
+        <!-- <item name="android:windowIsTranslucent">true</item>-->
+        <!-- 设置activity默认背景色为白色-->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="FullScreenModeFragment" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <!-- 虚拟按键不透明 -->
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">false</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>
